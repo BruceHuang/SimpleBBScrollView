@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.bb.bbaoscrollviewlib.test" >
+    package="org.bb.widget.test" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -10,8 +10,8 @@
         android:name="android.test.InstrumentationTestRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for org.bb.bbaoscrollviewlib.test"
-        android:targetPackage="org.bb.bbaoscrollviewlib.test" />
+        android:label="Tests for org.bb.widget.test"
+        android:targetPackage="org.bb.widget.test" />
 
     <application
         android:allowBackup="true"

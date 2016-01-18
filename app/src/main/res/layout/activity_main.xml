@@ -47,6 +47,60 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp" />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
 
 
         </LinearLayout>

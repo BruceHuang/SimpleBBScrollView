@@ -804,13 +804,15 @@ public class OverScroller {
 		void fling(int start, int velocity, int min, int max, int over) {
 			mOver = over;
 			mFinished = false;
-			mCurrVelocity = mVelocity = velocity;
+			int velocityN=  (int)(velocity * 0.667F);
+
+			mCurrVelocity = mVelocity = velocityN;
 			mDuration = mSplineDuration = 0;
 			mStartTime = AnimationUtils.currentAnimationTimeMillis();
 			mCurrentPosition = mStart = start;
 
 			if (start > max || start < min) {
-				startAfterEdge(start, min, max, velocity);
+				startAfterEdge(start, min, max, velocityN);
 				return;
 			}
 
@@ -818,11 +820,11 @@ public class OverScroller {
 			double totalDistance = 0.0;
 
 			if (velocity != 0) {
-				mDuration = mSplineDuration = getSplineFlingDuration(velocity);
-				totalDistance = getSplineFlingDistance(velocity);
+				mDuration = mSplineDuration = getSplineFlingDuration(velocityN);
+				totalDistance = getSplineFlingDistance(velocityN);
 			}
 
-			mSplineDistance = (int) (totalDistance * Math.signum(velocity));
+			mSplineDistance = (int) (totalDistance * Math.signum(velocityN));
 			mFinal = start + mSplineDistance;
 
 			// Clamp to a valid final position

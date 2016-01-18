@@ -653,6 +653,10 @@ public class BBaoScrollView extends FrameLayout {
                         } else {
 
                             if ((Math.abs(initialVelocity) > mMinimumVelocity)) {
+
+//
+
+                                Log.i(TAG, "FLING initialVelocity");
                                 fling(-initialVelocity);
                             }
                         }
@@ -1483,7 +1487,7 @@ public class BBaoScrollView extends FrameLayout {
 
             int height = getHeight() - getPaddingBottom() - getPaddingTop();
             int bottom = getChildAt(0).getHeight();
-            mScroller.fling(getScrollX(), getScrollY(), 0, velocityY, 0, 0, 0, Math.max(0, bottom - height), 0, height / 8);
+            mScroller.fling(getScrollX(), getScrollY(), 0, velocityY, 0, 0, 0, Math.max(0, bottom - height), 0, height/10);
             invalidate();
         }
     }
